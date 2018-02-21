@@ -47,5 +47,5 @@
 		"forin": false,
 		"jsdoc-format": false
 	},
-	"rulesDirectory": ["tslintrules/"]
+	"rulesDirectory": []
 }
