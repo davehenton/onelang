@@ -1,53 +1,51 @@
-
 {
-  "extends": "tslint:latest",
-  "rules": {
-    "angular-whitespace": [true, "check-interpolation", "check-semicolon"],
-    "banana-in-box": true,
-    "templates-no-negated-async": true,
-    "directive-selector": [true, "attribute", "sg", "camelCase"],
-    "component-selector": [true, "element", "sg", "kebab-case"],
-    "use-input-property-decorator": true,
-    "use-output-property-decorator": true,
-    "use-host-property-decorator": true,
-    "use-view-encapsulation": true,
-    "no-attribute-parameter-decorator": true,
-    "no-input-rename": true,
-    "no-output-rename": true,
-    "no-output-on-prefix": true,
-    "no-forward-ref": true,
-    "use-life-cycle-interface": true,
-    "contextual-life-cycle": true,
-    "trackBy-function": true,
-    "use-pipe-transform-interface": true,
-    "pipe-naming": [true, "camelCase", "sg"],
-    "component-class-suffix": true,
-    "directive-class-suffix": true,
-    "indent": [true, "spaces"],
-    "quotemark": [true, "single"],
-    "object-literal-sort-keys": false,
-    "trailing-comma": false,
-    "class-name": true,
-    "semicolon": [true, "always"],
-    "triple-equals": [true, "allow-null-check"],
-    "eofline": true,
-    "jsdoc-format": true,
-    "member-access": false,
-    "no-console": false,
-    "whitespace": [true,
-      "check-decl",
-      "check-operator",
-      "check-separator",
-      "check-type"
-    ],
-    "variable-name": [
-      "allow-leading-underscore"
-    ],
-    "curly": false,
-    "no-reference": false,
-    "no-var-requires": false,
-    "ordered-imports": false,
-    "no-trailing-whitespace": false
-  },
-  "rulesDirectory": []
+	"defaultSeverity": "error",
+	"extends": [
+		"tslint:recommended"
+	],
+	"jsRules": {},
+	"rules": {
+		"max-args": [true, 4],
+		"quotemark": false,
+		"trailing-comma": false,
+		"indent": [true, "tabs", 2],
+		"no-var-keyword": {
+			"severity": "warning"
+		},
+		"max-line-length": false,
+		"prefer-const": {
+			"severity": "warning"
+		},
+		"only-arrow-functions": false,
+		"object-literal-shorthand": false,
+		"variable-name": [true, "ban-keywords"],
+		"whitespace": {
+			"severity": "warning"
+		},
+		"no-angle-bracket-type-assertion": false,
+		"comment-format": false,
+		"no-console": {
+			"severity": "warning"
+		},
+		"no-bitwise": false,
+		"object-literal-sort-keys": false,
+		"eofline": true,
+		"semicolon": false,
+		"curly": [true, "ignore-same-line"],
+		"ordered-imports": false,
+		"no-string-literal": false,
+		"one-variable-per-declaration": false,
+		"member-access": true,
+		"align": {
+			"severity": "warning"
+		},
+		"member-ordering": false,
+		"no-empty": false,
+		"space-before-function-paren": false,
+		"interface-name": false,
+		"no-eval": false,
+		"forin": false,
+		"jsdoc-format": false
+	},
+	"rulesDirectory": ["tslintrules/"]
 }
